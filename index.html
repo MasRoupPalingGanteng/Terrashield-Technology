@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TerraShield Technologies</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+color:#333;
+}
+
+header{
+background:#0f172a;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:white;
+}
+
+.logo span{
+color:#22c55e;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#22c55e;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1700304759756-05c3ae7551bb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+margin:auto;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#22c55e;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.title h2{
+font-size:38px;
+color:#0f172a;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.price{
+font-size:30px;
+font-weight:bold;
+color:#22c55e;
+margin-top:15px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.step{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.step i{
+font-size:45px;
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.calculator{
+max-width:700px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#2563eb;
+border:none;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.result{
+margin-top:20px;
+background:#ecfdf5;
+padding:15px;
+border-radius:8px;
+font-size:20px;
+font-weight:bold;
+text-align:center;
+}
+
+.contact{
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+.contact h2{
+margin-bottom:20px;
+}
+
+.contact p{
+margin-bottom:10px;
+}
+
+footer{
+background:#020617;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+Terra<span>Shield</span>
+</div>
+
+<nav>
+<a href="#home">Beranda</a>
+<a href="#about">Tentang</a>
+<a href="#product">Produk</a>
+<a href="#how">Cara Kerja</a>
+<a href="#demo">Request Demo</a>
+<a href="#contact">Kontak</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Smart Safety Solutions For Heavy Equipment</h1>
+
+<p>
+Sistem Keselamatan Alat Berat Berbasis IoT untuk
+mengurangi risiko blind spot, tabrakan,
+dan meningkatkan keselamatan kerja secara real-time.
+</p>
+
+<a href="#demo" class="btn">
+Request Demo
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="title">
+<h2>Tentang TerraShield</h2>
+</div>
+
+<div class="about">
+
+<img src="Forklift.jpg">
+
+<div>
+
+<h3>Safety First Through Smart Technology</h3>
+
+<br>
+
+<p>
+TerraShield Technologies adalah perusahaan
+technopreneurship yang menyediakan sistem
+keselamatan alat berat berbasis Internet of Things (IoT).
+</p>
+
+<br>
+
+<p>
+Solusi kami membantu perusahaan konstruksi,
+pertambangan, rental alat berat, dan kontraktor
+meningkatkan keselamatan operasional dengan biaya
+yang lebih terjangkau dibanding sistem global.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="product">
+
+<div class="title">
+<h2>Paket Produk</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Basic Package</h3>
+<p>Sensor Deteksi Objek</p>
+<p>Buzzer Alarm</p>
+<p>LED Warning</p>
+<div class="price">Rp 8 Juta</div>
+</div>
+
+<div class="card">
+<h3>Standard Package</h3>
+<p>Semua Fitur Basic</p>
+<p>Virtual Barrier LED</p>
+<p>Monitoring Dashboard</p>
+<div class="price">Rp 15 Juta</div>
+</div>
+
+<div class="card">
+<h3>Premium Package</h3>
+<p>Kamera 360°</p>
+<p>Fatigue Monitoring AI</p>
+<p>Advanced Analytics</p>
+<div class="price">Rp 20 Juta</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="how">
+
+<div class="title">
+<h2>Cara Kerja Sistem</h2>
+</div>
+
+<div class="steps">
+
+<div class="step">
+<i class="fas fa-radar"></i>
+<h4>Deteksi Objek</h4>
+<p>Sensor mendeteksi manusia dan objek.</p>
+</div>
+
+<div class="step">
+<i class="fas fa-microchip"></i>
+<h4>ESP32 IoT</h4>
+<p>Data diproses oleh mikrokontroler.</p>
+</div>
+
+<div class="step">
+<i class="fas fa-triangle-exclamation"></i>
+<h4>Warning</h4>
+<p>Alarm dan LED aktif otomatis.</p>
+</div>
+
+<div class="step">
+<i class="fas fa-chart-line"></i>
+<h4>Dashboard</h4>
+<p>Monitoring realtime melalui dashboard.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="title">
+<h2>Kalkulator Estimasi Harga</h2>
+</div>
+
+<div class="calculator">
+
+<select id="paket">
+<option value="8000000">Basic</option>
+<option value="15000000">Standard</option>
+<option value="20000000">Premium</option>
+</select>
+
+<input type="number" id="unit" value="1" min="1">
+
+<button onclick="hitungHarga()">
+Hitung Estimasi
+</button>
+
+<div class="result" id="hasil">
+Rp 0
+</div>
+
+</div>
+
+</section>
+
+<section id="demo">
+
+<div class="title">
+<h2>Request Demo</h2>
+</div>
+
+<div class="calculator">
+
+<form id="demoForm">
+
+<input type="text"
+placeholder="Nama Perusahaan"
+required>
+
+<input type="text"
+placeholder="Nama PIC"
+required>
+
+<input type="email"
+placeholder="Email"
+required>
+
+<input type="text"
+placeholder="Nomor HP"
+required>
+
+<select required>
+<option>Pilih Paket</option>
+<option>Basic</option>
+<option>Standard</option>
+<option>Premium</option>
+</select>
+
+<textarea rows="5"
+placeholder="Kebutuhan dan Keterangan"></textarea>
+
+<button type="submit">
+Kirim Permintaan Demo
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Hubungi Kami</h2>
+
+<p>
+<i class="fab fa-whatsapp"></i>
+0895-3598-30556
+</p>
+
+<p>
+<i class="fab fa-instagram"></i>
+@terrashield.technologies
+</p>
+
+<p>
+<i class="fas fa-envelope"></i>
+info@terrashield.id
+</p>
+
+</section>
+
+<footer>
+© 2026 TerraShield Technologies | Heavy Equipment IoT Safety System
+</footer>
+
+<script>
+
+function hitungHarga(){
+
+let paket =
+parseInt(document.getElementById("paket").value);
+
+let unit =
+parseInt(document.getElementById("unit").value);
+
+let total = paket * unit;
+
+document.getElementById("hasil").innerHTML =
+"Rp " + total.toLocaleString("id-ID");
+
+}
+
+document.getElementById("demoForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert(
+"Terima kasih.\nPermintaan demo berhasil dikirim."
+);
+
+});
+
+</script>
+
+</body>
+</html>
